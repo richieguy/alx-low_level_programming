@@ -1,25 +1,28 @@
 #include <stdio.h>
-#include <unistd.h>
 /**
- *  * main - Entry point
- *   * Description: prints numbers
- *    * Return: Always 0 (success)
- *     */
+ * main - main block
+ * Description: Print all possible combinations fo single-digit numbers.
+ * Numbers must be separated by commas and a space.
+ * You can only use `putchar` to print to console
+ * You can only use `putchar` up to four times.
+ * You are not allowed to use any variable of type `char`.
+ * Return: 0
+ */
 int main(void)
 {
-		int i;
+	int i = 0;
 
-			for (i = '0'; i <= '9' ; i++)
-					{
-								putchar(i);
+	while (i < 10)
+	{
+		putchar(i + '0');
+		if (i < 9)
+		{
+			putchar(44);
+			putchar(32);
+		}
+		i++;
+	}
+	putchar('\n');
 
-										if (i != '9')
-													{
-																	putchar(',');
-																				putchar(' ');
-																						}
-											}
-
-				putchar('\n');
-					return (0);
+	return (0);
 }
