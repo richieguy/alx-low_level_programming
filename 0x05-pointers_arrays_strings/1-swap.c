@@ -5,7 +5,7 @@ nclude "main.h"
  *   * @a: pointer 1
  *    * @b: pointer 2
  *     * Return; 0
- *      */
+ */
 
 void swap_int(int *a, int *b)
 {
