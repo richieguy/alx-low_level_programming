@@ -1,4 +1,4 @@
-#include < stdio.h > /* printf */
+#include <stdio.h> /* printf */
 #include <stdlib.h> /* atoi */
 #include <stdbool.h> /* bool data type */
 
