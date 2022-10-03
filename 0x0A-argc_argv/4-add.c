@@ -3,9 +3,9 @@
 #include <stdbool.h> /* bool data type */
 
 /**
- *  * is_num - iterate through each argv to test if it's a number
- *   * @argvv: a argv
- *    * Return: true only if entire string is a number, false if not
+ * is_num - iterate through each argv to test if it's a number
+ * @argvv: a argv
+ * Return: true only if entire string is a number, false if not
  */
 
 bool is_num(char *argvv)
@@ -14,17 +14,17 @@ bool is_num(char *argvv)
 
 	for (j = 0; argvv[j]; j++)
 	{
-	if (!(argvv[j] >= '0' && argvv[j] <= '9'))
-		return (0);
+		if (!(argvv[j] >= '0' && argvv[j] <= '9'))
+			return (0);
 	}
 	return (1);
 }
 
 /**
- *  * main - print sum if all arguments given are numbers
- *   * @argc: argument counter
- *    * @argv: arguments
- *     * Return: 0 on success, 1 if an argument wasn't a number
+ * main - print sum if all arguments given are numbers
+ * @argc: argument counter
+ * @argv: arguments
+ * Return: 0 on success, 1 if an argument wasn't a number
  */
 
 int main(int argc, char *argv[])
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-			i++;
+		i++;
 	}
 	printf("%d\n", sum);
 
